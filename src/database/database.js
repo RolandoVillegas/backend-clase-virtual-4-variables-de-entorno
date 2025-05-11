@@ -1,5 +1,5 @@
 import mysql from 'mysql2';
-import { envs } from '../configuration/envs';
+import { envs } from '../configuration/envs.js';
 
 const connection = mysql.createConnection({
     host: envs.DB_HOST,
@@ -10,6 +10,6 @@ const connection = mysql.createConnection({
 })
 
 export const getConnection = () => {
-    console.log('Connected to databased');
+    console.log('Conectado a la base de datos');
     return connection;
 }

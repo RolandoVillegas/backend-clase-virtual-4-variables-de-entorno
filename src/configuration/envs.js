@@ -9,7 +9,7 @@ const envsSchema = joi.object({
     // joi comprueba y valida las variables de entorno antes de levantar el servidor!
     PORT: joi.number().required(),
     DB_USER: joi.string().required(),
-    DB_PASSWORD: joi.string().allow('').required(),  //.allo('') permite tener una password vacía, como pasa en XAMPP
+    DB_PASSWORD: joi.string().allow('').required(),  //.allow('') permite tener una password vacía, como pasa en XAMPP
     DATABASE: joi.string().required(),
     DB_PORT: joi.number().required(),
     DB_HOST: joi.string().required()
